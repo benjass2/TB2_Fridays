@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Archivos de origen">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Archivos de encabezado">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Archivos de recursos">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Archivos de encabezado\Controladora">
+      <UniqueIdentifier>{0840fab4-8594-44f2-85ae-8c82c483e602}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\Dominio">
+      <UniqueIdentifier>{b1af111c-cb91-4f37-8965-e085ad368825}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\Estructura de Datos">
+      <UniqueIdentifier>{439824ce-5f7e-489f-8de2-ca2ca9c331b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\Extras">
+      <UniqueIdentifier>{0976f00f-0e19-46fb-99eb-d5e5fc2711e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\Servicio">
+      <UniqueIdentifier>{f173fd06-73eb-4555-950b-a22dc657fdae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\Reporte">
+      <UniqueIdentifier>{61d38cb7-9745-4442-ac0a-27f2356b963e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc">
+      <Filter>Archivos de recursos</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ControladoraAdmin.h">
+      <Filter>Archivos de encabezado\Controladora</Filter>
+    </ClInclude>
+    <ClInclude Include="ControladoraCliente.h">
+      <Filter>Archivos de encabezado\Controladora</Filter>
+    </ClInclude>
+    <ClInclude Include="Fridays.h">
+      <Filter>Archivos de encabezado\Controladora</Filter>
+    </ClInclude>
+    <ClInclude Include="Bebida.h">
+      <Filter>Archivos de encabezado\Dominio</Filter>
+    </ClInclude>
+    <ClInclude Include="Carta.h">
+      <Filter>Archivos de encabezado\Dominio</Filter>
+    </ClInclude>
+    <ClInclude Include="CartaDelivery.h">
+      <Filter>Archivos de encabezado\Dominio</Filter>
+    </ClInclude>
+    <ClInclude Include="CartaLocal.h">
+      <Filter>Archivos de encabezado\Dominio</Filter>
+    </ClInclude>
+    <ClInclude Include="Cliente.h">
+      <Filter>Archivos de encabezado\Dominio</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesa.h">
+      <Filter>Archivos de encabezado\Dominio</Filter>
+    </ClInclude>
+    <ClInclude Include="Pedido.h">
+      <Filter>Archivos de encabezado\Dominio</Filter>
+    </ClInclude>
+    <ClInclude Include="PlatoPrincipal.h">
+      <Filter>Archivos de encabezado\Dominio</Filter>
+    </ClInclude>
+    <ClInclude Include="Postre.h">
+      <Filter>Archivos de encabezado\Dominio</Filter>
+    </ClInclude>
+    <ClInclude Include="Producto.h">
+      <Filter>Archivos de encabezado\Dominio</Filter>
+    </ClInclude>
+    <ClInclude Include="Reserva.h">
+      <Filter>Archivos de encabezado\Dominio</Filter>
+    </ClInclude>
+    <ClInclude Include="ArbolAVL.h">
+      <Filter>Archivos de encabezado\Estructura de Datos</Filter>
+    </ClInclude>
+    <ClInclude Include="ArbolTreap.h">
+      <Filter>Archivos de encabezado\Estructura de Datos</Filter>
+    </ClInclude>
+    <ClInclude Include="Cola.h">
+      <Filter>Archivos de encabezado\Estructura de Datos</Filter>
+    </ClInclude>
+    <ClInclude Include="Grafo.h">
+      <Filter>Archivos de encabezado\Estructura de Datos</Filter>
+    </ClInclude>
+    <ClInclude Include="HashTable.h">
+      <Filter>Archivos de encabezado\Estructura de Datos</Filter>
+    </ClInclude>
+    <ClInclude Include="Lista.h">
+      <Filter>Archivos de encabezado\Estructura de Datos</Filter>
+    </ClInclude>
+    <ClInclude Include="Nodo.h">
+      <Filter>Archivos de encabezado\Estructura de Datos</Filter>
+    </ClInclude>
+    <ClInclude Include="Pila.h">
+      <Filter>Archivos de encabezado\Estructura de Datos</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsolaColor.h">
+      <Filter>Archivos de encabezado\Extras</Filter>
+    </ClInclude>
+    <ClInclude Include="Funcionalidades.h">
+      <Filter>Archivos de encabezado\Extras</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Archivos de encabezado\Extras</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Archivos de encabezado\Extras</Filter>
+    </ClInclude>
+    <ClInclude Include="UtilidadesConsola.h">
+      <Filter>Archivos de encabezado\Extras</Filter>
+    </ClInclude>
+    <ClInclude Include="Boleta.h">
+      <Filter>Archivos de encabezado\Servicio</Filter>
+    </ClInclude>
+    <ClInclude Include="Comprobante.h">
+      <Filter>Archivos de encabezado\Servicio</Filter>
+    </ClInclude>
+    <ClInclude Include="Factura.h">
+      <Filter>Archivos de encabezado\Servicio</Filter>
+    </ClInclude>
+    <ClInclude Include="Pago.h">
+      <Filter>Archivos de encabezado\Servicio</Filter>
+    </ClInclude>
+    <ClInclude Include="PagoEfectivo.h">
+      <Filter>Archivos de encabezado\Servicio</Filter>
+    </ClInclude>
+    <ClInclude Include="PagoTarjeta.h">
+      <Filter>Archivos de encabezado\Servicio</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneradorDataSet.h">
+      <Filter>Archivos de encabezado\Reporte</Filter>
+    </ClInclude>
+    <ClInclude Include="GestorArchivos.h">
+      <Filter>Archivos de encabezado\Reporte</Filter>
+    </ClInclude>
+    <ClInclude Include="GestorBackup.h">
+      <Filter>Archivos de encabezado\Reporte</Filter>
+    </ClInclude>
+    <ClInclude Include="GestorClientes.h">
+      <Filter>Archivos de encabezado\Reporte</Filter>
+    </ClInclude>
+    <ClInclude Include="GestorListaEspera.h">
+      <Filter>Archivos de encabezado\Reporte</Filter>
+    </ClInclude>
+    <ClInclude Include="GestorOrdenamiento.h">
+      <Filter>Archivos de encabezado\Reporte</Filter>
+    </ClInclude>
+    <ClInclude Include="GestorPagos.h">
+      <Filter>Archivos de encabezado\Reporte</Filter>
+    </ClInclude>
+    <ClInclude Include="GestorPedidos.h">
+      <Filter>Archivos de encabezado\Reporte</Filter>
+    </ClInclude>
+    <ClInclude Include="GestorReserva.h">
+      <Filter>Archivos de encabezado\Reporte</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="TB2_Fridays.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="AssemblyInfo.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="app.ico">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

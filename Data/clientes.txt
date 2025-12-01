@@ -1,0 +1,5 @@
+# Base de Datos de Clientes - Fridays
+
+# ID,Nombre,Apellido,Telefono,DNI,Direccion,Categoria,PuntosLealtad
+
+

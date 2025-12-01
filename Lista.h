@@ -1,0 +1,351 @@
+#pragma once
+#include "Nodo.h"
+#include "GestorOrdenamiento.h"
+#include <iostream>
+#include <functional>
+using namespace std;
+
+template<typename T>
+class Lista {
+private:
+    Nodo<T>* cabeza;
+    Nodo<T>* cola;
+    int tamano;
+
+public:
+    Lista() : cabeza(nullptr), cola(nullptr), tamano(0) {}
+
+    Lista(const Lista<T>& otra) : cabeza(nullptr), cola(nullptr), tamano(0) {
+        Nodo<T>* actual = otra.cabeza;
+        while (actual != nullptr) {
+            insertarFinal(actual->getData());
+            actual = actual->getSiguiente();
+        }
+    }
+
+    ~Lista() {
+        limpiar();
+    }
+
+    Lista<T>& operator=(const Lista<T>& otra) {
+        if (this != &otra) {
+            limpiar();
+            Nodo<T>* actual = otra.cabeza;
+            while (actual != nullptr) {
+                insertarFinal(actual->getData());
+                actual = actual->getSiguiente();
+            }
+        }
+        return *this;
+    }
+
+    void insertarInicio(T elemento) {
+        Nodo<T>* nuevo = new Nodo<T>(elemento);
+
+        if (cabeza == nullptr) {
+            cabeza = cola = nuevo;
+        }
+        else {
+            nuevo->setSiguiente(cabeza);
+            cabeza->setAnterior(nuevo);
+            cabeza = nuevo;
+        }
+        tamano++;
+    }
+
+    void insertarFinal(T elemento) {
+        Nodo<T>* nuevo = new Nodo<T>(elemento);
+
+        if (cabeza == nullptr) {
+            cabeza = cola = nuevo;
+        }
+        else {
+            cola->setSiguiente(nuevo);
+            nuevo->setAnterior(cola);
+            cola = nuevo;
+        }
+        tamano++;
+    }
+
+    void insertarEnPosicion(int posicion, T elemento) {
+        if (posicion < 0 || posicion > tamano) {
+            cout << "Posicion fuera de rango" << endl;
+            return;
+        }
+
+        if (posicion == 0) {
+            insertarInicio(elemento);
+            return;
+        }
+
+        if (posicion == tamano) {
+            insertarFinal(elemento);
+            return;
+        }
+
+        Nodo<T>* nuevo = new Nodo<T>(elemento);
+        Nodo<T>* actual = cabeza;
+
+        for (int i = 0; i < posicion; i++) {
+            actual = actual->getSiguiente();
+        }
+
+        nuevo->setAnterior(actual->getAnterior());
+        nuevo->setSiguiente(actual);
+        actual->getAnterior()->setSiguiente(nuevo);
+        actual->setAnterior(nuevo);
+        tamano++;
+    }
+
+    bool eliminar(T elemento) {
+        if (cabeza == nullptr) return false;
+
+        Nodo<T>* actual = cabeza;
+        while (actual != nullptr) {
+            if (actual->getData() == elemento) {
+                if (actual == cabeza && actual == cola) {
+                    cabeza = cola = nullptr;
+                }
+                else if (actual == cabeza) {
+                    cabeza = cabeza->getSiguiente();
+                    cabeza->setAnterior(nullptr);
+                }
+                else if (actual == cola) {
+                    cola = cola->getAnterior();
+                    cola->setSiguiente(nullptr);
+                }
+                else {
+                    actual->getAnterior()->setSiguiente(actual->getSiguiente());
+                    actual->getSiguiente()->setAnterior(actual->getAnterior());
+                }
+
+                delete actual;
+                tamano--;
+                return true;
+            }
+            actual = actual->getSiguiente();
+        }
+        return false;
+    }
+
+    bool eliminarEnPosicion(int posicion) {
+        if (posicion < 0 || posicion >= tamano) {
+            cout << "Posición fuera de rango" << endl;
+            return false;
+        }
+
+        Nodo<T>* actual;
+
+        if (posicion < tamano / 2) {
+            actual = cabeza;
+            for (int i = 0; i < posicion; i++) {
+                actual = actual->getSiguiente();
+            }
+        }
+        else {
+            actual = cola;
+            for (int i = tamano - 1; i > posicion; i--) {
+                actual = actual->getAnterior();
+            }
+        }
+
+        if (actual == cabeza && actual == cola) {
+            cabeza = cola = nullptr;
+        }
+        else if (actual == cabeza) {
+            cabeza = cabeza->getSiguiente();
+            cabeza->setAnterior(nullptr);
+        }
+        else if (actual == cola) {
+            cola = cola->getAnterior();
+            cola->setSiguiente(nullptr);
+        }
+        else {
+            actual->getAnterior()->setSiguiente(actual->getSiguiente());
+            actual->getSiguiente()->setAnterior(actual->getAnterior());
+        }
+
+        delete actual;
+        tamano--;
+        return true;
+    }
+
+    bool eliminarSi(function<bool(const T&)> condicion) {
+        if (cabeza == nullptr) return false;
+
+        Nodo<T>* actual = cabeza;
+        bool eliminado = false;
+
+        while (actual != nullptr) {
+            Nodo<T>* siguiente = actual->getSiguiente();
+
+            if (condicion(actual->getData())) {
+                if (actual == cabeza && actual == cola) {
+                    cabeza = cola = nullptr;
+                }
+                else if (actual == cabeza) {
+                    cabeza = cabeza->getSiguiente();
+                    cabeza->setAnterior(nullptr);
+                }
+                else if (actual == cola) {
+                    cola = cola->getAnterior();
+                    cola->setSiguiente(nullptr);
+                }
+                else {
+                    actual->getAnterior()->setSiguiente(actual->getSiguiente());
+                    actual->getSiguiente()->setAnterior(actual->getAnterior());
+                }
+
+                delete actual;
+                tamano--;
+                eliminado = true;
+            }
+
+            actual = siguiente;
+        }
+
+        return eliminado;
+    }
+
+    bool buscar(T elemento) const {
+        Nodo<T>* actual = cabeza;
+        while (actual != nullptr) {
+            if (actual->getData() == elemento) {
+                return true;
+            }
+            actual = actual->getSiguiente();
+        }
+        return false;
+    }
+
+    T obtenerEnPosicion(int posicion) const {
+        if (posicion < 0 || posicion >= tamano) {
+            cout << "Posicion fuera de rango" << endl;
+            throw out_of_range("Posicion fuera de rango");
+        }
+
+        Nodo<T>* actual;
+
+        if (posicion < tamano / 2) {
+            actual = cabeza;
+            for (int i = 0; i < posicion; i++) {
+                actual = actual->getSiguiente();
+            }
+        }
+        else {
+            actual = cola;
+            for (int i = tamano - 1; i > posicion; i--) {
+                actual = actual->getAnterior();
+            }
+        }
+
+        return actual->getData();
+    }
+
+
+    // Obtener referencia para modificar el elemento directamente
+    T& obtenerReferencia(int posicion) {
+        if (posicion < 0 || posicion >= tamano) {
+            cout << "Posicion fuera de rango" << endl;
+            throw out_of_range("Posicion fuera de rango");
+        }
+
+        Nodo<T>* actual;
+
+        if (posicion < tamano / 2) {
+            actual = cabeza;
+            for (int i = 0; i < posicion; i++) {
+                actual = actual->getSiguiente();
+            }
+        }
+        else {
+            actual = cola;
+            for (int i = tamano - 1; i > posicion; i--) {
+                actual = actual->getAnterior();
+            }
+        }
+
+        return actual->getDataRef();
+    }
+
+
+
+    T obtenerPrimero() const {
+        if (cabeza == nullptr) {
+            cout << "Lista vacia" << endl;
+            throw runtime_error("Lista vacia");
+        }
+        return cabeza->getData();
+    }
+
+    T obtenerUltimo() const {
+        if (cola == nullptr) {
+            cout << "Lista vacia" << endl;
+            throw runtime_error("Lista vacia");
+        }
+        return cola->getData();
+    }
+
+    int gettamano() const { return tamano; }
+
+    bool estaVacia() const { return cabeza == nullptr; }
+
+    void mostrar() const {
+        Nodo<T>* actual = cabeza;
+        cout << "Lista: ";
+        while (actual != nullptr) {
+            cout << actual->getData();
+            if (actual->getSiguiente() != nullptr) {
+                cout << " <-> ";
+            }
+            actual = actual->getSiguiente();
+        }
+        cout << " -> NULL" << endl;
+    }
+
+    void mostrarReversa() const {
+        Nodo<T>* actual = cola;
+        cout << "Lista (reversa): ";
+        while (actual != nullptr) {
+            cout << actual->getData();
+            if (actual->getAnterior() != nullptr) {
+                cout << " <-> ";
+            }
+            actual = actual->getAnterior();
+        }
+        cout << " -> NULL" << endl;
+    }
+
+    Lista<T> filtrar(function<bool(const T&)> condicion) const {
+        Lista<T> resultado;
+        Nodo<T>* actual = cabeza;
+
+        while (actual != nullptr) {
+            if (condicion(actual->getData())) {
+                resultado.insertarFinal(actual->getData());
+            }
+            actual = actual->getSiguiente();
+        }
+        return resultado;
+    }
+
+
+
+    void ordenar(function<bool(const T&, const T&)> comparador,
+        typename GestorOrdenamiento<T>::Algoritmo algoritmo = GestorOrdenamiento<T>::MERGE_SORT) {
+        if (tamano <= 1) return;
+        GestorOrdenamiento<T>::ordenar(cabeza, cola, comparador, algoritmo);
+    }
+
+
+private:
+    void limpiar() {
+        while (cabeza != nullptr) {
+            Nodo<T>* temp = cabeza;
+            cabeza = cabeza->getSiguiente();
+            delete temp;
+        }
+        cola = nullptr;
+        tamano = 0;
+    }
+};

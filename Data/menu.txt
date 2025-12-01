@@ -1,0 +1,103 @@
+# Menu Fridays Restaurant
+# Formato: ID,Nombre,Precio,Categoria,Disponible
+101,Jack Daniels Burger,52,plato,1
+502,Ultimate Nachos,39,plato,1
+330,Chicken Fingers,34,plato,1
+887,Classic Mojito,33,bebida,1
+610,New York Cheesecake,29,postre,1
+412,Chicken & Shrimp Cajun Pasta,48,plato,1
+255,Texas Ribs Full Rack,72,plato,1
+901,Loaded Potato Skins,28,plato,1
+777,Long Island Iced Tea,36,bebida,1
+588,Brownie Obsession,32,postre,1
+119,Tequila Raspberry,37,bebida,1
+450,Grilled Salmon Lemon,56,plato,1
+309,Fridays Signature Wings,44,plato,1
+784,Blue Cheese Burger,41,plato,1
+250,Frozen Margarita,31,bebida,1
+14,Cola Refill,12,bebida,1
+876,Chocolate Milkshake,24,bebida,1
+333,Chicken Caesar Salad,33,plato,1
+990,Triple Combo Sampler,59,plato,1
+620,Vanilla Ice Cream,18,postre,1
+701,Smoky Barbecue Chicken,47,plato,1
+345,Red Velvet Cake,30,postre,1
+601,Piña Colada,34,bebida,1
+760,Buffalo Wings 12 piezas,46,plato,1
+345,Beef Quesadillas,29,plato,1
+908,Tropical Smoothie,21,bebida,1
+778,Mango Madness Mojito,35,bebida,1
+230,BBQ Bacon Burger,49,plato,1
+655,Helado con Brownie,26,postre,1
+411,Garlic Parmesan Fries,19,plato,1
+500,Fridays Club Sandwich,38,plato,1
+842,Whiskey Sour,29,bebida,1
+612,Chocolate Fudge Cake,34,postre,1
+310,Apple Crumble,27,postre,1
+495,Pasta Alfredo Chicken,42,plato,1
+999,Beer Pitcher,45,bebida,1
+770,Strawberry Lemonade,20,bebida,1
+333,Chicken Teriyaki Bowl,40,plato,1
+210,Buffalo Chicken Sandwich,37,plato,1
+822,Watermelon Margarita,32,bebida,1
+410,Crema Volteada,22,postre,1
+550,Nachos Supreme,31,plato,1
+741,Classic Hot Dog,25,plato,1
+820,Blue Lagoon Cocktail,35,bebida,1
+492,Spicy Tuna Roll,39,plato,1
+843,Lemon Pie,26,postre,1
+18,Café Americano,10,bebida,1
+699,Chocolate Volcano Cake,33,postre,1
+317,Spaghetti Bolognesa,36,plato,1
+431,Jugo Detox Verde,19,bebida,1
+230,Mini Burgers Trio,38,plato,1
+674,Agua Mineral,8,bebida,1
+990,Onion Rings Basket,22,plato,1
+777,Sangría Roja,28,bebida,1
+256,Tacos de Pollo,30,plato,1
+900,Sundae de Vainilla,17,postre,1
+188,Milkshake de Oreo,23,bebida,1
+475,Chicken Wrap Crispy,34,plato,1
+355,Ensalada Mediterránea,31,plato,1
+480,Churros con Chocolate,20,postre,1
+944,Pisco Sour,29,bebida,1
+511,Chicha Morada,11,bebida,1
+855,Costillas a la BBQ,60,plato,1
+775,Empanadas de Carne,27,plato,1
+432,Macedonia de Frutas,18,postre,1
+620,Lomo a la Parrilla,48,plato,1
+710,Papas Rústicas,16,plato,1
+540,Cappuccino,14,bebida,1
+950,Ensalada de Atún,29,plato,1
+221,Tequeños Clásicos,19,plato,1
+375,Jugo de Naranja,12,bebida,1
+428,Milkshake Fresa,22,bebida,1
+303,Pasta al Pesto,34,plato,1
+510,Galletas con Helado,21,postre,1
+880,Moscow Mule,32,bebida,1
+299,Ensalada César Pollo,33,plato,1
+684,Té Helado,10,bebida,1
+275,Salmón Ahumado Deluxe,58,plato,1
+350,Batido de Plátano,18,bebida,1
+712,Tostada Francesa,26,plato,1
+989,Fruit Punch,17,bebida,1
+245,Pepperoni Pizza Combo,42,plato,1
+420,Torta de Chocolate,28,postre,1
+311,Ceviche Clásico,38,plato,1
+522,Limonada Frozen,16,bebida,1
+451,Hamburguesa Americana,36,plato,1
+60,Camarones Apanados,45,plato,1
+444,Crepes Dulces,24,postre,1
+550,Aperol Spritz,33,bebida,1
+130,Arroz Chaufa,31,plato,1
+911,Smoothie Verde,19,bebida,1
+377,Hot Brownie Sundae,29,postre,1
+122,Jarrito de Maracuyá,15,bebida,1
+314,Chili con Carne,34,plato,1
+701,Helado de Fresa,18,postre,1
+280,Torta Helada,25,postre,1
+900,Papa a la Huancaína,20,plato,1
+501,Piña Frozen,14,bebida,1
+312,Chop de Cerveza,21,bebida,1
+405,Wrap Vegano,27,plato,1
+888,Anticuchos,33,plato,1

@@ -1,0 +1,103 @@
+CodigoReserva,ClienteID,ClienteNombre,ClienteApellido,ClienteDNI,ClienteTelefono,NumeroMesa,CapacidadMesa,UbicacionMesa,TipoMesa,Fecha,Hora,NumPersonas,Estado,Observaciones
+
+RES58392,912,Fernando,Rojas,74561238,923456781,1,4,Interior,Regular,25/12/2025,19:00,4,Confirmada,Mesa junto a la ventana
+
+RES19483,87,Lucia,Huaman,82349175,913457821,5,6,Interior,Familiar,25/12/2025,20:00,6,Pendiente,Cumpleaños
+
+RES72811,334,Diego,Carrillo,51234987,943567812,16,4,Terraza,Regular,26/12/2025,13:00,3,Confirmada,
+
+RES41902,512,Laura,Salazar,70451238,987654111,21,4,VIP,VIP,26/12/2025,21:00,2,Confirmada,Aniversario
+
+RES90312,278,Andres,Vilca,61345729,901234567,10,4,Interior,Regular,27/12/2025,12:30,4,Pendiente,
+
+RES14567,953,Valeria,Escobar,78456123,945612378,12,6,Interior,Familiar,27/12/2025,14:00,5,Confirmada,Cliente frecuente
+
+RES83219,129,Julio,Montoya,73451289,912345678,3,2,Interior,Regular,27/12/2025,19:30,2,Pendiente,
+
+RES57201,477,Patricia,Aguilar,84235179,954321879,18,4,Terraza,Regular,28/12/2025,20:45,4,Confirmada,Mesa con sombra
+
+RES61439,698,Hector,Mejia,75123489,967812345,7,4,Interior,Regular,28/12/2025,21:15,4,Pendiente,
+
+RES32845,349,Daniela,Bravo,89456127,923478912,11,6,Interior,Familiar,29/12/2025,13:30,6,Confirmada,Requiere menú vegano
+
+RES90441,941,Oscar,Quispe,61423587,987320145,4,4,Terraza,Regular,29/12/2025,19:00,4,Pendiente,
+
+RES77729,222,Diana,Valverde,74562813,976543218,15,8,Interior,Familiar,29/12/2025,20:30,7,Confirmada,Visita empresarial
+
+RES66290,588,Martin,Soto,58462137,902345671,9,2,Interior,Regular,30/12/2025,18:45,2,Pendiente,
+
+RES29104,311,Rosa,Campos,70349125,978120345,13,4,Interior,Regular,30/12/2025,21:00,4,Confirmada,
+
+RES84320,728,Javier,Reyes,85471329,965432781,6,2,Terraza,Regular,31/12/2025,12:00,2,Confirmada,Mesa con vista
+
+RES53018,456,Gloria,Suarez,73451207,943218765,8,6,Interior,Familiar,31/12/2025,14:30,5,Pendiente,
+
+RES17594,389,Esteban,Palacios,80561243,987654899,17,4,Interior,Regular,31/12/2025,20:00,3,Confirmada,
+
+RES62631,915,Melanie,Torres,72461385,934512789,20,8,Terraza,Familiar,01/01/2026,13:00,7,Pendiente,
+
+RES41200,65,Alfredo,Miranda,64358921,954789123,1,4,Interior,Regular,01/01/2026,15:00,4,Confirmada,
+
+RES83210,774,Karina,Peralta,87423195,923498712,14,2,VIP,VIP,01/01/2026,19:30,2,Confirmada,Atención especial
+
+RES55109,203,Rodrigo,Benitez,74856320,912398745,3,4,Interior,Regular,02/01/2026,18:15,4,Pendiente,
+
+RES73144,689,Sandra,Morales,53147862,900123456,22,6,Interior,Familiar,02/01/2026,21:00,6,Confirmada,
+
+RES69400,98,Victor,Ramirez,70453182,967854231,9,2,Terraza,Regular,03/01/2026,12:45,2,Pendiente,
+
+RES38017,552,Cecilia,Cuadros,65413782,955321478,19,4,Interior,Regular,03/01/2026,14:20,4,Confirmada,
+
+RES88901,347,Renato,Flores,71325486,990123458,24,8,Terraza,Familiar,03/01/2026,20:30,8,Pendiente,
+
+RES31204,910,Marisol,Vargas,61325487,987410325,4,4,Interior,Regular,04/01/2026,13:15,4,Confirmada,
+
+RES44128,143,Alex,Grimaldo,82345761,923498756,6,2,Interior,Regular,04/01/2026,19:00,2,Pendiente,
+
+RES90477,831,Tania,Poma,70481523,964312578,2,4,VIP,VIP,04/01/2026,20:30,4,Confirmada,Noche romántica
+
+RES11832,59,Samuel,Ccori,61234795,976541233,10,6,Interior,Familiar,05/01/2026,12:00,5,Pendiente,
+
+RES27653,483,Nicole,Bazan,76543182,955667832,16,4,Terraza,Regular,05/01/2026,13:30,4,Confirmada,
+
+RES69921,922,Gabriel,Loayza,84351729,934567890,18,4,Interior,Regular,05/01/2026,19:45,4,Pendiente,
+
+RES53077,375,Johanna,Matos,61437852,978451200,7,6,Interior,Familiar,06/01/2026,20:15,6,Confirmada,
+
+RES15942,816,Marco,Perez,53247861,901278534,12,2,Interior,Regular,06/01/2026,21:00,2,Pendiente,
+
+RES77288,104,Claudia,Galvez,73481256,912347856,5,4,Terraza,Regular,07/01/2026,12:30,4,Confirmada,
+
+RES44112,601,Ignacio,Rivera,84561327,970123478,3,2,Interior,Regular,07/01/2026,14:00,2,Pendiente,
+
+RES90301,219,Yesenia,Luna,71328945,998743210,14,4,Interior,Regular,07/01/2026,19:00,4,Confirmada,
+
+RES68134,742,Pablo,Castillo,65412389,944123780,20,8,Interior,Familiar,08/01/2026,13:00,8,Pendiente,
+
+RES51180,998,Dolores,Cruz,72345196,955531200,6,4,Terraza,Regular,08/01/2026,20:00,4,Confirmada,
+
+RES24019,324,Fabian,Cornejo,80123467,933210987,9,2,Interior,Regular,08/01/2026,21:00,2,Pendiente,
+
+RES99321,456,Gustavo,Chavez,78315426,912310987,11,6,Interior,Familiar,09/01/2026,12:45,6,Confirmada,Mesa para familia
+
+RES12456,311,Natalia,Fuentes,65471236,984512379,5,4,Interior,Regular,09/01/2026,18:00,4,Confirmada,
+
+RES78934,90,Kevin,Sanchez,70412358,943267899,8,6,Interior,Familiar,10/01/2026,19:30,5,Pendiente,
+
+RES45612,567,Aurora,Paredes,73251864,933214578,12,4,Terraza,Regular,10/01/2026,20:00,4,Confirmada,
+
+RES98765,432,Gerardo,Lopez,80415632,955123467,16,2,Interior,Regular,11/01/2026,13:00,2,Pendiente,
+
+RES23456,287,Evelyn,Delgado,74562318,901234765,4,4,Interior,Regular,11/01/2026,19:00,4,Confirmada,Cliente frecuente
+
+RES65432,915,Bruno,Espinoza,62375419,945678213,10,6,Interior,Familiar,12/01/2026,14:00,6,Pendiente,
+
+RES34567,634,Lizeth,Tapia,80341567,934512087,18,4,Terraza,Regular,12/01/2026,20:30,4,Confirmada,
+
+RES87654,377,Emilio,Serrano,71542863,922145678,7,2,VIP,VIP,13/01/2026,21:00,2,Confirmada,Cena romántica
+
+RES11223,159,Mariela,Quintana,68423157,955098721,3,4,Interior,Regular,13/01/2026,18:30,4,Pendiente,
+
+RES99887,912,Fernando,Rojas,74561238,923456781,15,8,Interior,Familiar,14/01/2026,19:00,8,Confirmada,Reunión familiar
+
+

@@ -1,0 +1,2 @@
+# Reservas - Fridays Restaurant
+# Formato: CodigoReserva,ClienteID,ClienteNombre,ClienteApellido,ClienteDNI,ClienteTelefono,NumeroMesa,CapacidadMesa,UbicacionMesa,TipoMesa,Fecha,Hora,NumPersonas,Estado,Observaciones
